@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #eeeeee;
+  color: #222222;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 20px 0 30px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.inputbox,
+.tracker {
+  padding: 20px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.inputbox {
+  flex: 1;
+}
+
+.tracker {
+  flex: 2;
+  min-width: 0;
+}
+
+form label,
+.tracker label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  background-color: #ffffff;
+  font: inherit;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  background-color: #2f7048;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #245838;
+}
+
+#form-message {
+  color: #b00020;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  text-align: left;
+}
+
+th {
+  background-color: #e5e5e5;
+}
+
+td button {
+  padding: 6px 9px;
+  background-color: #b33a3a;
+}
+
+td button:hover {
+  background-color: #912d2d;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
